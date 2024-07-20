@@ -11,6 +11,7 @@ To use the project, follow these steps:
 
 ## Project requirements
 Python > 3.9
+
 pytest - for tests
 
 ## Extension
