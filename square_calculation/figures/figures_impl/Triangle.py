@@ -10,9 +10,6 @@ class Triangle(Figure):
         self.side_1 = side_1
         self.side_2 = side_2
         self.side_3 = side_3
-        self.P = sum([side_1, side_2, side_3])
-        p = self.P / 2
-        self.Square = math.sqrt(p * (p - side_1) * (p - side_2) * (p - side_3))
 
         self.is_equaliteral = False
         if side_1 == side_2 and side_2 == side_3:
@@ -27,7 +24,9 @@ class Triangle(Figure):
             raise ValueError(f'Triange inequality doesnt hold')
 
     def get_square(self, ) -> float:
-        return self.Square
+        p = sum([self.side_1, self.side_2, self.side_3]) / 2
+        square = math.sqrt(p * (p - self.side_1) * (p - self.side_2) * (p - self.side_3))
+        return square
 
     def __str__(self) -> str:
         return (f"\n{super().__str__()}"
