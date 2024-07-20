@@ -9,6 +9,10 @@ To use the project, follow these steps:
 1. Use the figure factory to get the figure implementation.
 2. Call the `get_square` function on the figure implementation to calculate the square.
 
+## Project requirements
+Python > 3.9
+pytest - for tests
+
 ## Extension
 To extend the project by adding a new figure, follow these steps:
 
